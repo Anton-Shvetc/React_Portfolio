@@ -70,24 +70,24 @@ export default function Footer() {
             heading="Important Links"
             links={[
               {
-                title: 'Home',
-                path: '/',
-                type: 'Link',
+                title: "Home",
+                path: "/",
+                type: "Link",
               },
               {
-                type: 'Link',
-                title: 'About',
-                path: '/about',
+                type: "Link",
+                title: "About",
+                path: "/about",
               },
               {
-                type: 'Link',
-                title: 'Projects',
-                path: '/projects',
+                type: "Link",
+                title: "Projects",
+                path: "/projects",
               },
               {
-                type: 'Link',
-                title: 'Contact',
-                path: '/contact',
+                type: "Link",
+                title: "Contact",
+                path: "/contact",
               },
             ]}
           />
@@ -97,12 +97,12 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: "+89999999",
+                path: "tel:+8999999",
               },
               {
-                title: 'webcifar@gmail.com',
-                path: 'mailto:webcifar@gmail.com',
+                title: "antonshvetswork@yandex.ru",
+                path: "mailto:antonshvetswork@yandex.ru",
               },
               // {
               //   title: 'GEC Circle, Chittagong, Bangladesh',
@@ -116,16 +116,16 @@ export default function Footer() {
             heading="social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: "Facebook",
+                path: "http://facebook.com",
               },
               {
-                title: 'Twitter',
-                path: 'http://twitter.com',
+                title: "Twitter",
+                path: "http://twitter.com",
               },
               {
-                title: 'Instagram',
-                path: 'http://instagram.com',
+                title: "Instagram",
+                path: "http://instagram.com",
               },
             ]}
           />
