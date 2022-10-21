@@ -1,16 +1,19 @@
 import React from 'react';
  import AboutSection from '../components/AboutSection';
- import ServicesSection from '../components/ServicesSection';
+ //import ServicesSection from '../components/ServicesSection';
  import ProjectsSection from '../components/ProjectsSection';
 // import ContactBanner from '../components/ContactBanner';
- import HeroSection from '../components/HeroSection';
+//import HeroSection from '../components/HeroSection';
+import SocialBox from '../components/SocialBox'
+
 
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+      <SocialBox />
+      {/* <HeroSection /> */}
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <ProjectsSection />
       {/* 
 

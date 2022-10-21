@@ -10,7 +10,7 @@ import projects from '../assets/data/projects';
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
+  padding-bottom: 10rem;
   .projects__allItems {
     display: flex;
     gap: 3rem;
@@ -89,6 +89,7 @@ export default function ProjectsSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    stack={project.stack}
                   />
                 </SwiperSlide>
               );
