@@ -7,7 +7,8 @@ const AboutItemStyles = styled.div`
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  /* gap: 5rem; */
+  gap: 5rem;
+  height: 100px;
   margin-top: 3rem;
   .title {
     font-size: 2.4rem;
@@ -17,16 +18,20 @@ const AboutItemStyles = styled.div`
     gap: 1.5rem;
     position: absolute;
     left: 18rem;
+    flex-wrap: wrap;
   }
   .item {
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 8px;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
+
+    height: auto;
     align-items: flex-start;
     gap: 1rem;
+    margin-top: 2rem;
     .items {
       position: initial;
       gap: 1rem;
@@ -34,6 +39,9 @@ const AboutItemStyles = styled.div`
     .title {
       font-size: 2rem;
     }
+  }
+  @media only screen and (max-width: 768px) {
+    height: auto;
   }
 `;
 

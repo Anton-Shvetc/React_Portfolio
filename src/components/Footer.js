@@ -116,16 +116,17 @@ export default function Footer() {
             heading="Social Links"
             links={[
               {
-                title: "Facebook",
-                path: "http://facebook.com",
+                title: "Github",
+                path: "https://github.com/Anton-Shvetc",
               },
-              {
-                title: "Twitter",
-                path: "http://twitter.com",
-              },
+
               {
                 title: "Instagram",
                 path: "http://instagram.com",
+              },
+              {
+                title: "Linkedin",
+                path: "http://linkedIn.com",
               },
             ]}
           />

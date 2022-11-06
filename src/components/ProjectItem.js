@@ -4,8 +4,7 @@ import styled from "styled-components";
 import ProjectImg from "../assets/images/projectImg.png";
 
 const ProjectItemStyles = styled.div`
-position: relative;  
-.projectItem__img {
+  .projectItem__img {
     width: 100%;
     height: 400px;
     border-radius: 12px;
@@ -17,22 +16,23 @@ position: relative;
     }
   }
   .projectItem__links {
-  position: absolute;
-  z-index:10;
-  right: 0;
-  top: 5px;
-  .link {
-    display: block;
-    margin: 0 5px 5px;
-    color:var(--gray-1);
-    text-align: center;
-    padding: 7px;
-    border: 1px solid var(--gray-1);
-    border-radius: 4px;
-    background: var(--gray-2);
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 5px;
+    .link {
+      display: block;
+      margin: 0 5px 5px;
+      color: var(--gray-1);
+      text-align: center;
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid var(--gray-1);
+      border-radius: 4px;
+      background: var(--gray-2);
+    }
   }
-  }
-  
+
   .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
@@ -42,21 +42,23 @@ position: relative;
   .projectItem__title {
     font-size: 2.2rem;
   }
-  .projectItem__desc,   .projectItem__stack  {
+  .projectItem__desc,
+  .projectItem__stack {
     font-size: 1.6rem;
     font-family: "RobotoMono Regular";
     margin-top: 1rem;
   }
   .projectItem__stack {
     display: flex;
-   
+    flex-wrap: wrap;
   }
   .stack__item {
     margin-right: 5px;
-    color:var(--gray-1);
+    color: var(--gray-1);
     padding: 7px;
     border: 1px solid var(--gray-1);
     border-radius: 4px;
+    margin-bottom: 5px;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -69,18 +71,23 @@ export default function ProjectItem({
   img = ProjectImg,
   title = "Project Name",
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  demo,
+  code,
   stack,
 }) {
-  console.log(stack);
   return (
     <ProjectItemStyles>
       <div className="projectItem__links">
-      <Link to="/projects" className="link">
-          Demo
-      </Link>
-      <Link to="/projects" className="link">
-          Code
-      </Link>
+        {demo && (
+          <a href={demo} target="blank" className="link">
+            Demo
+          </a>
+        )}
+        {code && (
+          <a href={code} target="blank" className="link">
+            Code
+          </a>
+        )}
       </div>
       <Link to="/projects" className="projectItem__img">
         <img src={img} alt="project img" />
@@ -89,7 +96,7 @@ export default function ProjectItem({
         <Link to="#">
           <h3 className="projectItem__title">{title}</h3>
         </Link>
-          
+
         <p className="projectItem__desc">{desc}</p>
         {stack && (
           <div className="projectItem__stack">

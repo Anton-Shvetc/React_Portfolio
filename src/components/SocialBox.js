@@ -1,5 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import  {BsTwitter}  from "react-icons/md";
+import {
+  TwitterOutlined,
+  LinkedinOutlined,
+  InstagramOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
 
 const SocialStyles = styled.div`
 
@@ -118,40 +125,40 @@ const SocialStyles = styled.div`
 export default function SocialBox() {
   return (
     <div className="container">
-    <SocialStyles>
-      {/* <div className="hero__social__indicator">
-          <p>Follow</p>
-          <img src={SocialMediaArrow} alt="icon" />
-        </div> */}
-      <div className="hero__social__text">
-        <ul>
-          <li>
-            <a href="http://facebook.com/" target="_blank" rel="noreferrer">
-              FB
-            </a>
-          </li>
-          <li>
-            <a href="http://twitter.com/" target="_blank" rel="noreferrer">
-              TW
-            </a>
-          </li>
-          <li>
-            <a href="http://isntagram.com/" target="_blank" rel="noreferrer">
-              IG
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/antonshvetc/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LI
-            </a>
-          </li>
-        </ul>
-      </div>
-    </SocialStyles>
+      <SocialStyles>
+        <div className="hero__social__text">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/Anton-Shvetc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GithubOutlined />
+              </a>
+            </li>
+            <li>
+              <a href="http://twitter.com/" target="_blank" rel="noreferrer">
+                <TwitterOutlined />
+              </a>
+            </li>
+            <li>
+              <a href="http://isntagram.com/" target="_blank" rel="noreferrer">
+                <InstagramOutlined />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/antonshvetc/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinOutlined />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </SocialStyles>
     </div>
   );
 }
