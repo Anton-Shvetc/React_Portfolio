@@ -69,7 +69,7 @@ const ProjectItemStyles = styled.div`
 
 export default function ProjectItem({
   img = ProjectImg,
-  title = "Project Name",
+  title = "Project Names",
   desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   demo,
   code,

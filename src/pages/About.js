@@ -2,7 +2,7 @@ import React from "react";
 //import { Link } from "react-router-dom";
 import styled from "styled-components";
 import PText from "../components/PText";
-import Button from "../components/Button";
+// import Button from "../components/Button";
 //import AboutImg from "../assets/images/about-page-img.png";
 import AboutInfoItem from "../components/AboutInfoItem";
 import ContactBanner from "../components/ContactBanner";
@@ -123,15 +123,22 @@ export default function About() {
 
                 <AboutInfoItem
                   title="FrontEnd"
-                  items={["HTML", "CSS", "JavaScript", "React", "TypeScript", "Redux"]}
+                  items={[
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "TypeScript",
+                    "Redux",
+                  ]}
                 />
                 <AboutInfoItem
                   title="BackEnd"
-                  items={["Node", "Express", "PHP"]}
+                  items={["PHP", "Node", "Express"]}
                 />
                 <AboutInfoItem
                   title="Design"
-                  items={["Photoshop", "After Effects", "Figma"]}
+                  items={["Figma", "Photoshop", "After Effects"]}
                 />
               </div>
               <div className="about__info__item">

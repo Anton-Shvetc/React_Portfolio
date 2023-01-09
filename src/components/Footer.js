@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import FooterCol from './FooterCol';
-import PText from './PText';
+import React from "react";
+import styled from "styled-components";
+import FooterCol from "./FooterCol";
+import PText from "./PText";
 
 const FooterStyle = styled.div`
   background: var(--deep-dark);
@@ -59,10 +59,8 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Anton Shvets</h1>
           <PText>
-            {/* A freelance web designer and developer from Chittagong, Bangladesh.
-            I always make websites that have unique designs and also has a good
-            performance rate. */}
-            Lorem text
+            I am a Frontend developer. I create professional app with JavaScript
+            and React.
           </PText>
         </div>
         <div className="footer__col2">
@@ -74,21 +72,21 @@ export default function Footer() {
                 path: "/",
                 type: "Link",
               },
-              {
-                type: "Link",
-                title: "About",
-                path: "/about",
-              },
+              // {
+              //   type: "Link",
+              //   title: "About",
+              //   path: "/about",
+              // },
               {
                 type: "Link",
                 title: "Projects",
                 path: "/projects",
               },
-              {
-                type: "Link",
-                title: "Contact",
-                path: "/contact",
-              },
+              // {
+              //   type: "Link",
+              //   title: "Contact",
+              //   path: "/contact",
+              // },
             ]}
           />
         </div>
@@ -96,10 +94,10 @@ export default function Footer() {
           <FooterCol
             heading="Contact Info"
             links={[
-              {
-                title: "+89999999",
-                path: "tel:+8999999",
-              },
+              // {
+              //   title: "+89999999",
+              //   path: "tel:+8999999",
+              // },
               {
                 title: "antonshvetswork@yandex.ru",
                 path: "mailto:antonshvetswork@yandex.ru",
@@ -121,12 +119,12 @@ export default function Footer() {
               },
 
               {
-                title: "Instagram",
-                path: "http://instagram.com",
+                title: "Telegram",
+                path: "https://t.me/AntonShvetc",
               },
               {
                 title: "Linkedin",
-                path: "http://linkedIn.com",
+                path: "https://www.linkedin.com/in/antonshvetc/",
               },
             ]}
           />
@@ -135,10 +133,8 @@ export default function Footer() {
       <div className="copyright">
         <div className="container">
           <PText>
-            © 2022 - Anton | GitHub
-            {/* <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '} */}
+            © 2023 - Anton | 
+            <a href="https://github.com/Anton-Shvetc"> GitHub</a>
           </PText>
         </div>
       </div>

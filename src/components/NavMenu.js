@@ -123,7 +123,7 @@ export default function NavMenu() {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/about"
             onClick={() => setShowNav(!showNav)}
@@ -133,7 +133,7 @@ export default function NavMenu() {
           >
             About
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/projects"
@@ -145,7 +145,7 @@ export default function NavMenu() {
             Projects
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/contact"
             onClick={() => setShowNav(!showNav)}
@@ -155,7 +155,7 @@ export default function NavMenu() {
           >
             Contact
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </NavStyles>
   );

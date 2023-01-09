@@ -15,12 +15,12 @@ export default function App() {
         <NavMenu />
         <ScrollToTop />
         <Switch>
-          <Route path="/about">
+          {/* <Route path="/about">
             <About />
-          </Route>
-          <Route path="/contact">
+          </Route> */}
+          {/* <Route path="/contact">
             <Contact />
-          </Route>
+          </Route> */}
           <Route path="/projects">
             <Projects />
           </Route>

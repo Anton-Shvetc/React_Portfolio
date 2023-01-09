@@ -1,24 +1,35 @@
 import React from "react";
 import styled from "styled-components";
-import  {BsTwitter}  from "react-icons/md";
+import { BsTwitter } from "react-icons/md";
 import {
   TwitterOutlined,
   LinkedinOutlined,
   InstagramOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
+// import Icon, { Telegram } from "react-share-icons";
+// import Icon, { Telegram } from "react-share-icons";
+// import Instagram from "react-share-icons/lib/Instagram";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { fa-brands, fa-telegram } from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faCheckSquare,
+  faCoffee,
+  faTelegram,
+} from "@fortawesome/fontawesome-free-solid";
+import { TelegramIcon } from "../assets/icons/TelergamIcon";
 
 const SocialStyles = styled.div`
+  display: flex;
 
-    display: flex;
-    
-    flex-direction: column;
-    gap: 2rem;
-    position: fixed;
-    top: 120px;
-    right: 50px;
-    width: 50px;
-    z-index: 100;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  top: 120px;
+  right: 50px;
+  width: 50px;
+  z-index: 100;
 
   .hero__social {
     right: 50px;
@@ -68,7 +79,6 @@ const SocialStyles = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    
     display: none;
 
     .hero {
@@ -137,16 +147,17 @@ export default function SocialBox() {
                 <GithubOutlined />
               </a>
             </li>
+
             <li>
-              <a href="http://twitter.com/" target="_blank" rel="noreferrer">
-                <TwitterOutlined />
+              <a
+                href="https://t.me/AntonShvetc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <TelegramIcon />
               </a>
             </li>
-            <li>
-              <a href="http://isntagram.com/" target="_blank" rel="noreferrer">
-                <InstagramOutlined />
-              </a>
-            </li>
+
             <li>
               <a
                 href="https://www.linkedin.com/in/antonshvetc/"
